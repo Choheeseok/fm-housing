@@ -14,7 +14,7 @@ function Navbar() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo">
             {/* (주)에프엠 하우징 */}
-            <img src="/images/logo.jpg" alt="logo" />
+            <img src="images/logo.jpg" alt="logo" />
           </Link>
           <div className="menu-icon" onClick={onMenuClick}>
             <i className={menuClick ? "fas fa-times" : "fas fa-bars"} />
@@ -44,7 +44,11 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/board" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/boards"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 공실현황
               </Link>
             </li>
